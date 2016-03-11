@@ -3,6 +3,8 @@
   "Deployment order": [
     {"Description":"Changes before migration script 'Migration script created at 2016-03-11 10:37:18. Covers changes to: Author. Update id column for changing from NULL to NOT NULL'","Type":"Compare","Id":"2016-03-11-104154 k3 auto"},
     {"Description":"Migration script 'Migration script created at 2016-03-11 10:37:18. Covers changes to: Author. Update id column for changing from NULL to NOT NULL'","Type":"Migration","Id":"2016-03-11-104154 k4 user"},
+    {"Description":"Changes before migration script 'Migration script created at 2016-03-11 11:20:58. Covers changes to: Book.'","Type":"Compare","Id":"2016-03-11-112151 k5 auto"},
+    {"Description":"Migration script 'Migration script created at 2016-03-11 11:20:58. Covers changes to: Book.'","Type":"Migration","Id":"2016-03-11-112151 k6 user"},
   ],
   "Conflict in this file?": "If there’s a conflict in this file, you probably want to keep both changes. Learn more: http://www.red-gate.com/SOC4/order-file-more-info"
 }

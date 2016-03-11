@@ -1,0 +1,26 @@
+diff --git a/Tables/dbo.Author.sql b/Tables/dbo.Author.sql
+index 4175856..149578d 100644
+--- a/Tables/dbo.Author.sql
++++ b/Tables/dbo.Author.sql
+@@ -4,4 +4,6 @@
+ [firstname] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+ [lastname] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+ ) ON [PRIMARY]
++ALTER TABLE [dbo].[Author] ADD 
++CONSTRAINT [PK_Author_id] PRIMARY KEY CLUSTERED  ([id]) ON [PRIMARY]
+ GO
+diff --git a/Tables/dbo.Book.sql b/Tables/dbo.Book.sql
+new file mode 100644
+index 0000000..c825127
+--- /dev/null
++++ b/Tables/dbo.Book.sql
+@@ -0,0 +1,9 @@
++CREATE TABLE [dbo].[Book]
++(
++[id] [int] NULL,
++[title] [varchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
++[AuthorID] [int] NULL
++) ON [PRIMARY]
++ALTER TABLE [dbo].[Book] ADD
++CONSTRAINT [FK_Book_Author] FOREIGN KEY ([AuthorID]) REFERENCES [dbo].[Author] ([id]) ON DELETE CASCADE ON UPDATE CASCADE
++GO
