@@ -1,0 +1,12 @@
+diff --git a/Tables/dbo.Author.sql b/Tables/dbo.Author.sql
+index 54ee8e2..4175856 100644
+--- a/Tables/dbo.Author.sql
++++ b/Tables/dbo.Author.sql
+@@ -1,6 +1,6 @@
+ CREATE TABLE [dbo].[Author]
+ (
+-[id] [int] NULL,
++[id] [int] NOT NULL,
+ [firstname] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+ [lastname] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+ ) ON [PRIMARY]
